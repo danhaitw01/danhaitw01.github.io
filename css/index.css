@@ -5,6 +5,8 @@ a{
 	cursor:default;
 }
 table{
+	width:20%;
+	height:25px;
 	border:1px solid black;
 	border-radius:10px;
 	background-color:white;
@@ -22,11 +24,8 @@ table:hover{
 	cursor:pointer;
 }
 td{
-	width:220px;
-	height:25px;
 	text-align:center;
 	vertical-align:middle;
-	
 }
 img{
 	vertical-align:middle;
