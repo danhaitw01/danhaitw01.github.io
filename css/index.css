@@ -4,6 +4,9 @@ body{
 a{
 	cursor:default;
 }
+h1{
+	text-align:center;
+}
 table{
 	width:95%;
 	height:5%;
