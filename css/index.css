@@ -1,0 +1,33 @@
+body{
+	background-color:rgb(156,254,109);
+}
+a{
+	cursor:default;
+}
+table{
+	border:1px solid black;
+	border-radius:10px;
+	background-color:white;
+	margin-left:auto;
+	margin-right:auto;
+}
+table:hover{
+	border:1px solid black;
+	border-radius:10px;
+	background-color:lightgrey;
+	margin-left:auto;
+	margin-right:auto;
+	transform:scale(1.05);
+	box-shadow:5px 5px 2px rgba(0,0,0,0.8);
+	cursor:pointer;
+}
+td{
+	width:220px;
+	height:25px;
+	text-align:center;
+	vertical-align:middle;
+	
+}
+img{
+	vertical-align:middle;
+}
