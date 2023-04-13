@@ -1,6 +1,7 @@
 document.write('<script src="./js/jquery-3.6.1.js"></script>');
 document.write('<script src="./js/LocaleSwitch.js"></script>');
 function English_Locale(){
+	document.title="Rumami's Profile Page";
 	$('#LocaleReq0').jqmultilang('en');
 	$('#LocaleReq1').jqmultilang('en');
 	$('#LocaleReq2').jqmultilang('en');
@@ -10,6 +11,7 @@ function English_Locale(){
 	$('#LocaleReq6').jqmultilang('en');
 }
 function Chinese_Locale(){
+	document.title="琉見的個人頁面";
 	$('#LocaleReq0').jqmultilang('zh-tw');
 	$('#LocaleReq1').jqmultilang('zh-tw');
 	$('#LocaleReq2').jqmultilang('zh-tw');
@@ -19,6 +21,7 @@ function Chinese_Locale(){
 	$('#LocaleReq6').jqmultilang('zh-tw');
 }
 function Japanese_Locale(){
+	document.title="ルマミの紹介ページ";
 	$('#LocaleReq0').jqmultilang('ja');
 	$('#LocaleReq1').jqmultilang('ja');
 	$('#LocaleReq2').jqmultilang('ja');
