@@ -2,31 +2,19 @@ document.write('<script src="./js/jquery-3.6.1.js"></script>');
 document.write('<script src="./js/LocaleSwitch.js"></script>');
 function English_Locale(){
 	document.title="Rumami's Profile Page";
-	$('#LocaleReq0').jqmultilang('en');
-	$('#LocaleReq1').jqmultilang('en');
-	$('#LocaleReq2').jqmultilang('en');
-	$('#LocaleReq3').jqmultilang('en');
-	$('#LocaleReq4').jqmultilang('en');
-	$('#LocaleReq5').jqmultilang('en');
-	$('#LocaleReq6').jqmultilang('en');
+	for (var i=0;i<7;i++){
+		$('#LocaleReq'+String(i)).jqmultilang('en');
+	}
 }
 function Chinese_Locale(){
 	document.title="琉見的個人頁面";
-	$('#LocaleReq0').jqmultilang('zh-tw');
-	$('#LocaleReq1').jqmultilang('zh-tw');
-	$('#LocaleReq2').jqmultilang('zh-tw');
-	$('#LocaleReq3').jqmultilang('zh-tw');
-	$('#LocaleReq4').jqmultilang('zh-tw');
-	$('#LocaleReq5').jqmultilang('zh-tw');
-	$('#LocaleReq6').jqmultilang('zh-tw');
+	for (var i=0;i<7;i++){
+		$('#LocaleReq'+String(i)).jqmultilang('zh-tw');
+	}
 }
 function Japanese_Locale(){
 	document.title="ルマミの紹介ページ";
-	$('#LocaleReq0').jqmultilang('ja');
-	$('#LocaleReq1').jqmultilang('ja');
-	$('#LocaleReq2').jqmultilang('ja');
-	$('#LocaleReq3').jqmultilang('ja');
-	$('#LocaleReq4').jqmultilang('ja');
-	$('#LocaleReq5').jqmultilang('ja');
-	$('#LocaleReq6').jqmultilang('ja');
+	for (var i=0;i<7;i++){
+		$('#LocaleReq'+String(i)).jqmultilang('ja');
+	}
 }
