@@ -32,4 +32,5 @@ td{
 }
 img{
 	vertical-align:middle;
+	display: contents;
 }
