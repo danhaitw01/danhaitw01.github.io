@@ -1,0 +1,38 @@
+{
+    "locale":"en",
+    "content":
+    [
+        {
+            "id":"LocaleReq0",
+            "text":"Change Language"
+        },
+        {
+            "id":"LocaleReq1",
+            "text":"Rumami's Profile Page"
+        },
+        {
+            "id":"LocaleReq2",
+            "text":"My Twitter"
+        },
+        {
+            "id":"LocaleReq3",
+            "text":"My Facebook Page"
+        },
+        {
+            "id":"LocaleReq4",
+            "text":"My Twitch Channel"
+        },
+        {
+            "id":"LocaleReq5",
+            "text":"My Translation Youtube Channel"
+        },
+        {
+            "id":"LocaleReq6",
+            "text":"My Entertainment Youtube Channel"
+        },
+        {
+            "id":"LocaleReq7",
+            "text":"My bilibili Space"
+        }
+    ]
+}

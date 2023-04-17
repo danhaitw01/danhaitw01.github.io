@@ -41,3 +41,22 @@ function Japanese_Locale_V2(){
 	document.title="ルマミの紹介ページ";
 	Locale_Switch_V2("ja")
 }
+
+
+
+//第三版寫法
+
+function Chinese_Locale_V3(){
+	document.title="琉見的個人頁面";
+	Locale_Switch_V3("zh-tw")
+}
+
+function English_Locale_V3(){
+	document.title="Rumami's Profile Page";
+	Locale_Switch_V3("en")
+}
+
+function Japanese_Locale_V3(){
+	document.title="ルマミの紹介ページ";
+	Locale_Switch_V3("ja")
+}
