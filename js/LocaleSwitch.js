@@ -67,13 +67,13 @@ function Locale_Switch_V2(locale){
 
 //第三版寫法
 
-function Locale_Switch_V3(locale){
+async function Locale_Switch_V3(locale){
 	var requestURL="./locale/locale_"+locale+".json";
 	var request=new XMLHttpRequest();
 	request.open("get",requestURL);
 	request.responseType = 'json';
 	request.send();
-	if (request.readyState==4){
+	request.onload = function() {
 		var data=request.response;
 		for (var i=0;i<data.content.length+1;i++){
 			if (i===1){
