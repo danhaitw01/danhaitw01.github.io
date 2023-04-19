@@ -75,7 +75,7 @@ async function Locale_Switch_V3(locale){
 	request.send();
 	request.onload = function() {
 		var data=request.response;
-		for (var i=0;i<data.content.length+1;i++){
+		for (var i=0;i<data.content.length;i++){
 			if (i===1){
 				document.title=data.content[i].text;
 			}
