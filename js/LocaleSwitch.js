@@ -73,7 +73,7 @@ function Locale_Switch_V3(locale){
 	request.open("get",requestURL);
 	request.responseType = 'json';
 	request.send();
-	if (XMLHttpRequest.readyState()==4){
+	if (request.readyState()==4){
 		var data=request.response;
 		for (var i=0;i<data.content.length+1;i++){
 			if (i===1){
