@@ -61,6 +61,21 @@ function Japanese_Locale_V3(){
 
 
 
+//利用User Agent設定初始語系，支援語言切換功能第三版以後
+
+var locale=navigator.language;
+if (locale[0]+locale[1]=="en"){
+	English_Locale_V3();
+}
+else if (locale=="zh-tw"){
+	Chinese_Locale_V3();
+}
+else if (locale=="ja"){
+	Japanese_Locale_V3();
+}
+
+
+
 
 
 //實時時間顯示
