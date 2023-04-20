@@ -63,8 +63,9 @@ function Japanese_Locale_V3(){
 
 //利用User Agent設定初始語系，支援語言切換功能第三版以後
 
-var locale=navigator.language.toLowerCase();
-if (locale[0]+locale[1]=="en"){
+var locale=navigator.language;
+locale=locale.toLowerCase();
+if (locale.startsWith("en")){
 	English_Locale_V3();
 }
 else if (locale=="zh-tw"){
