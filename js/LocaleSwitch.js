@@ -70,7 +70,7 @@ function Locale_Switch_V2(locale){
 
 //第三版寫法
 
-async function Locale_Switch_V3(locale){
+function Locale_Switch_V3(locale){
 	var requestURL="./locale/locale_"+locale+".json";
 	var request=new XMLHttpRequest();
 	request.open("get",requestURL);
