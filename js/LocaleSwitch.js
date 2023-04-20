@@ -27,7 +27,8 @@ var Chinese_String=[
 "我的Twitch頻道",
 "我Youtube上的翻譯頻道",
 "我Youtube上的娛樂頻道",
-"我的bilibili個人空間"];
+"我的bilibili個人空間",
+"現在時間:"];
 
 var English_String=[
 "Change Language",
@@ -37,7 +38,8 @@ var English_String=[
 "My Twitch Channel",
 "My Translation Youtube Channel",
 "My Entertainment Youtube Channel",
-"My bilibili Space"];
+"My bilibili Space",
+"Current Time:"];
 
 var Japanese_String=[
 "言語切り替え",
@@ -47,18 +49,19 @@ var Japanese_String=[
 "私のTwitchチャンネル",
 "私の翻訳Youtubeチャンネル",
 "私のエンタメYoutubeチャンネル",
-"私のbilibili空間"];
+"私のbilibili空間",
+"現在の時間:"];
 
 function Locale_Switch_V2(locale){
-	for(var i=0;i<Chinese_String.length+1;i++){
+	for(var i=0;i<Chinese_String.length;i++){
 		if(locale=="zh-tw"){
-			$('#LocaleReq'+String(i)).text(Chinese_String[i])
+			$('#LocaleReq'+String(i)).text(Chinese_String[i]);
 		}
 		else if(locale=="en"){
-			$('#LocaleReq'+String(i)).text(English_String[i])
+			$('#LocaleReq'+String(i)).text(English_String[i]);
 		}
 		else if(locale=="ja"){
-			$('#LocaleReq'+String(i)).text(Japanese_String[i])
+			$('#LocaleReq'+String(i)).text(Japanese_String[i]);
 		}
 	}
 }

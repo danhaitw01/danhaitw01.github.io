@@ -33,6 +33,10 @@
         {
             "id":"LocaleReq7",
             "text":"My bilibili Space"
+        },
+        {
+            "id":"LocaleReq8",
+            "text":"Current Time:"
         }
     ]
 }

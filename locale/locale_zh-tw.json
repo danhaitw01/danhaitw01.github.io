@@ -33,6 +33,10 @@
         {
             "id":"LocaleReq7",
             "text":"我的bilibili個人空間"
+        },
+        {
+            "id":"LocaleReq8",
+            "text":"現在時間:"
         }
     ]
 }
