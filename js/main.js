@@ -66,6 +66,16 @@ function Japanese_Locale_V3(){
 //實時時間顯示
 	
 setInterval(function (){
-    var time=new Date().toLocaleString(navigator.language);
+	var t=""
+	if (document.title=="Rumami's Profile Page"){
+		t="en-US";
+	}
+	else if (document.title=="琉見的個人頁面"){
+		t="zh-TW";
+	}
+	else if (document.title=="ルマミの紹介ページ"){
+		t="ja-JP";
+	}
+    var time=new Date().toLocaleString(t);
     $("#Time").text(time);
 }, 0);

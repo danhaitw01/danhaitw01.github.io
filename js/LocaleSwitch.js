@@ -101,6 +101,6 @@ if (locale.startsWith("en")){
 else if (locale=="zh-tw"){
 	Locale_Switch_V3("zh-tw");
 }
-else if (locale=="ja"){
+else if (locale.startsWith("ja")){
 	Locale_Switch_V3("ja");
 }
