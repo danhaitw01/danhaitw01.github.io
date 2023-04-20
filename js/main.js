@@ -1,4 +1,4 @@
-document.write('<script src="./js/jquery-3.6.1.js"></script>');
+document.write('<script src="./js/jquery-3.6.4.slim.min.js"></script>');
 document.write('<script src="./js/LocaleSwitch.js"></script>');
 //第一版寫法
 

@@ -1,5 +1,5 @@
 //這裡註解掉是因為在main.js中已引入jquery，不用引入第二次，一般測試情況請引入jquery
-//document.write('<script src="./js/jquery-3.6.1.js"></script>');
+//document.write('<script src="./js/jquery-3.6.4.slim.min.js"></script>');
 
 //第一版寫法
 $(document).ready(
