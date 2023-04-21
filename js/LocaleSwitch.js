@@ -101,7 +101,7 @@ locale=locale.toLowerCase();
 if (locale.startsWith("en")){
 	Locale_Switch_V3("en");
 }
-else if (locale=="zh-tw"){
+else if (locale.startsWith("zh") && locale.endsWith("tw")){
 	Locale_Switch_V3("zh-tw");
 }
 else if (locale.startsWith("ja")){
