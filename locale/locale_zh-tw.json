@@ -36,6 +36,10 @@
         {
             "id":"LocaleReq8",
             "text":"現在時間:"
+        },
+        {
+            "id":"LocaleReq9",
+            "text":"我的GitHub"
         }
     ]
 }
