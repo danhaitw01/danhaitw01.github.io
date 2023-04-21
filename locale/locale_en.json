@@ -36,6 +36,10 @@
         {
             "id":"LocaleReq8",
             "text":"Current Time:"
+        },
+        {
+            "id":"LocaleReq9",
+            "text":"My GitHub Profile"
         }
     ]
 }
