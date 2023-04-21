@@ -36,6 +36,10 @@
         {
             "id":"LocaleReq8",
             "text":"現在の時間:"
+        },
+        {
+            "id":"LocaleReq9",
+            "text":"私のGitHubプロフィール"
         }
     ]
 }
