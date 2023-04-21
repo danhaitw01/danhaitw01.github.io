@@ -28,7 +28,8 @@ var Chinese_String=[
 "我Youtube上的翻譯頻道",
 "我Youtube上的娛樂頻道",
 "我的bilibili個人空間",
-"現在時間:"];
+"現在時間:",
+"我的GitHub"];
 
 var English_String=[
 "Change Language",
@@ -39,7 +40,8 @@ var English_String=[
 "My Translation Youtube Channel",
 "My Entertainment Youtube Channel",
 "My bilibili Space",
-"Current Time:"];
+"Current Time:",
+"My GitHub Profile"];
 
 var Japanese_String=[
 "言語切り替え",
@@ -50,7 +52,8 @@ var Japanese_String=[
 "私の翻訳Youtubeチャンネル",
 "私のエンタメYoutubeチャンネル",
 "私のbilibili空間",
-"現在の時間:"];
+"現在の時間:",
+"私のGitHubプロフィール"];
 
 function Locale_Switch_V2(locale){
 	for(var i=0;i<Chinese_String.length;i++){
