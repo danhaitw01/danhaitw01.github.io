@@ -5,21 +5,21 @@ document.write('<script src="./js/LocaleSwitch.js"></script>');
 
 function English_Locale_V1(){
 	document.title="Rumami's Profile Page";
-	for (var i=0;i<9;i++){
+	for (var i=0;i<10;i++){
 		Locale_Switch_V1(i,'en');
 	}
 }
 
 function Chinese_Locale_V1(){
 	document.title="琉見的個人頁面";
-	for (var i=0;i<9;i++){
+	for (var i=0;i<10;i++){
 		Locale_Switch_V1(i,'zh-tw');
 	}
 }
 
 function Japanese_Locale_V1(){
 	document.title="ルマミの紹介ページ";
-	for (var i=0;i<9;i++){
+	for (var i=0;i<10;i++){
 		Locale_Switch_V1(i,'ja');
 	}
 }
