@@ -112,7 +112,7 @@ else if (locale.startsWith("ja")){
 
 
 
-//實時時間顯示
+//多語系切換實時時間顯示格式
 	
 setInterval(function (){
 	var t=""
