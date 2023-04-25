@@ -1,5 +1,5 @@
 //這裡註解掉是因為在main.js中已引入jquery，不用引入第二次，一般測試情況請引入jquery
-//document.write('<script src="./js/jquery-3.6.4.slim.min.js"></script>');
+//document.write('<script src="./asset/internel_resource/js/jquery-3.6.4.slim.min.js"></script>');
 
 //第一版寫法
 $(document).ready(
@@ -74,7 +74,7 @@ function Locale_Switch_V2(locale){
 //第三版寫法
 
 function Locale_Switch_V3(locale){
-	var requestURL="./locale/locale_"+locale+".json";
+	var requestURL="./asset/internel_resource/locale/locale_"+locale+".json";
 	var request=new XMLHttpRequest();
 	request.open("get",requestURL);
 	request.responseType = 'json';
