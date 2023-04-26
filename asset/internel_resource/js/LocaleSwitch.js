@@ -11,69 +11,16 @@ $(document).ready(
 	}
 );
 
-function Locale_Switch_V1(times,input){
+function Locale_Switch_Old(times,input){
 	$('#LocaleReq'+String(times)).jqmultilang(input);
 }
 
 
 
-//第二版寫法
+//後續寫法
 
-var Chinese_String=[
-"語言切換",
-"琉見的個人頁面",
-"我的Twitter",
-"我的Facebook粉絲專頁",
-"我的Twitch頻道",
-"我Youtube上的翻譯頻道",
-"我Youtube上的娛樂頻道",
-"我的bilibili個人空間",
-"現在時間:",
-"我的GitHub"];
-
-var English_String=[
-"Change Language",
-"Rumami's Profile Page",
-"My Twitter",
-"My Facebook Page",
-"My Twitch Channel",
-"My Translation Youtube Channel",
-"My Entertainment Youtube Channel",
-"My bilibili Space",
-"Current Time:",
-"My GitHub Profile"];
-
-var Japanese_String=[
-"言語切り替え",
-"ルマミの紹介ページ",
-"私のTwitter",
-"私のFacebookページ",
-"私のTwitchチャンネル",
-"私の翻訳Youtubeチャンネル",
-"私のエンタメYoutubeチャンネル",
-"私のbilibili空間",
-"現在の時間:",
-"私のGitHubプロフィール"];
-
-function Locale_Switch_V2(locale){
-	for(var i=0;i<Chinese_String.length;i++){
-		if(locale=="zh-tw"){
-			$('#LocaleReq'+String(i)).text(Chinese_String[i]);
-		}
-		else if(locale=="en"){
-			$('#LocaleReq'+String(i)).text(English_String[i]);
-		}
-		else if(locale=="ja"){
-			$('#LocaleReq'+String(i)).text(Japanese_String[i]);
-		}
-	}
-}
-
-
-
-//第三版寫法
-
-function Locale_Switch_V3(locale){
+function Locale_Switch_New(locale){
+	$("#locale").text(locale);
 	var requestURL="./asset/internel_resource/locale/locale_"+locale+".json";
 	var request=new XMLHttpRequest();
 	request.open("get",requestURL);
@@ -81,11 +28,13 @@ function Locale_Switch_V3(locale){
 	request.send();
 	request.onload = function() {
 		var data=request.response;
-		for (var i=0;i<data.content.length;i++){
-			if (i===1){
-				document.title=data.content[i].text;
+		var data_key=Object.keys(data);
+		var data_value=Object.values(data);
+		for (var i=1;i<data_key.length+1;i++){
+			if (i==2){
+				document.title=data_value[i];
 			}
-			$("#"+data.content[i].id).text(data.content[i].text);
+			$("#"+data_key[i]).text(data_value[i]);
 		}
 	}
 }
@@ -98,16 +47,23 @@ function Locale_Switch_V3(locale){
 
 var locale=navigator.language;
 locale=locale.toLowerCase();
-if (locale.startsWith("en")){
-	Locale_Switch_V3("en");
+var requestURL="./asset/internel_resource/locale/supported_locale.json";
+var request=new XMLHttpRequest();
+request.open("get",requestURL);
+request.responseType = 'json';
+request.send();
+request.onload = function() {
+	var data=request.response;
+	var data_key=Object.keys(data);
+	var data_value=Object.values(data);
+	for (var i=0;i<data_key.length;i++){
+		if (locale.startsWith(data_key[i]) && locale.endsWith(data_value[i].toLowerCase())){
+			Locale_Switch_New(data_key[i]+"-"+data_value[i]);
+			return 0;
+		}
+	}
+	Locale_Switch_New("en-US");
 }
-else if (locale.startsWith("zh") && locale.endsWith("tw")){
-	Locale_Switch_V3("zh-tw");
-}
-else if (locale.startsWith("ja")){
-	Locale_Switch_V3("ja");
-}
-
 
 
 
@@ -115,16 +71,7 @@ else if (locale.startsWith("ja")){
 //多語系切換實時時間顯示格式
 	
 setInterval(function (){
-	var t=""
-	if (document.title=="Rumami's Profile Page"){
-		t="en-US";
-	}
-	else if (document.title=="琉見的個人頁面"){
-		t="zh-TW";
-	}
-	else if (document.title=="ルマミの紹介ページ"){
-		t="ja-JP";
-	}
-    var time=new Date().toLocaleString(t);
+	var locale=$("#locale").text();
+	var time=new Date().toLocaleString(locale);
     $("#Time").text(time);
-}, 0);
+},1000);

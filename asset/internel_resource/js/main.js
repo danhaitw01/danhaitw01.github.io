@@ -6,55 +6,20 @@ document.write('<script src="./asset/internel_resource/js/LocaleSwitch.js"></scr
 function English_Locale_V1(){
 	document.title="Rumami's Profile Page";
 	for (var i=0;i<10;i++){
-		Locale_Switch_V1(i,'en');
+		Locale_Switch_Old(i,'en');
 	}
 }
 
 function Chinese_Locale_V1(){
 	document.title="琉見的個人頁面";
 	for (var i=0;i<10;i++){
-		Locale_Switch_V1(i,'zh-tw');
+		Locale_Switch_Old(i,'zh-tw');
 	}
 }
 
 function Japanese_Locale_V1(){
 	document.title="ルマミの紹介ページ";
 	for (var i=0;i<10;i++){
-		Locale_Switch_V1(i,'ja');
+		Locale_Switch_Old(i,'ja');
 	}
-}
-
-
-
-//第二版寫法
-
-function Chinese_Locale_V2(){
-	document.title="琉見的個人頁面";
-	Locale_Switch_V2("zh-tw");
-}
-
-function English_Locale_V2(){
-	document.title="Rumami's Profile Page";
-	Locale_Switch_V2("en");
-}
-
-function Japanese_Locale_V2(){
-	document.title="ルマミの紹介ページ";
-	Locale_Switch_V2("ja");
-}
-
-
-
-//第三版寫法
-
-function Chinese_Locale_V3(){
-	Locale_Switch_V3("zh-tw");
-}
-
-function English_Locale_V3(){
-	Locale_Switch_V3("en");
-}
-
-function Japanese_Locale_V3(){
-	Locale_Switch_V3("ja");
 }
