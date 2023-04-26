@@ -74,4 +74,4 @@ setInterval(function (){
 	var locale=$("#locale").text();
 	var time=new Date().toLocaleString(locale);
     $("#Time").text(time);
-},1000);
+},100);
