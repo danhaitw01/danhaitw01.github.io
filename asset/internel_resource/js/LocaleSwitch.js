@@ -30,8 +30,8 @@ function Locale_Switch_New(locale){
 		var data=request.response;
 		var data_key=Object.keys(data);
 		var data_value=Object.values(data);
-		for (var i=1;i<data_key.length+1;i++){
-			if (i==2){
+		for (var i=0;i<data_key.length;i++){
+			if (i===1){
 				document.title=data_value[i];
 			}
 			$("#"+data_key[i]).text(data_value[i]);
